@@ -6,7 +6,16 @@ This is another shot at my personal website. Since I want to do it 2016 style th
 If you remember my old website, [www.dreami.ch (Archive)](https://web.archive.org/web/20140417210722/https://www.dreami.ch/), this shall be the new version of it. 
 There were some apps on that old site, some of it were client-side JS, some server-side PHP. There will probably be less features on it since some apps should better be run on a backend, like searching through MAC vendor databases, but I'll see what I can do.
 
-Current plans for now
+# Design Goals
+* Modern browser support
+* Built with modern tools
+* Focus on usability
+
+## Nice to haves
+* Speed
+* No outdated infos
+
+# Current plans
 * Embed Bootstrap
 * Use my old domain
 * Move over contents
