@@ -1,15 +1,16 @@
 ---
 layout: default
-title: MAC Address Lookup
-description: Get various information about a MAC address
+title: IP Address Lookup
+description: Get various information about an IP address
 ---
 <div class="row">
     <div class="input-group">
-      <input type="text" class="form-control" placeholder="MAC Address" id="mac">
+      <input type="text" class="form-control" placeholder="IP Address" id="ip">
       <span class="input-group-btn">
         <button class="btn btn-default" type="button" id="button">Go!</button>
       </span>
     </div>
+    <p class="help-block">IPv4, IPv6 or even domain. Leave empty for your own address</p>
 </div>
 <br>
 
@@ -24,14 +25,24 @@ description: Get various information about a MAC address
   <div class="table-responsive">
     <table class="table" hidden id="table">
       <tr>
-        <th>Prefix</th>
-        <th>Company</th>
         <th>Address</th>
+        <th>Country</th>
+        <th>Region</th>
+        <th>City</th>
+        <th>ISP</th>
+        <th>AS</th>
+        <th>Organization</th>
+        <th>Reverse</th>
       </tr>
       <tr>
-        <td id="prefix"></td>
-        <td id="company"></td>
         <td id="address"></td>
+        <td id="country"></td>
+        <td id="region"></td>
+        <td id="city"></td>
+        <td id="isp"></td>
+        <td id="as"></td>
+        <td id="organization"></td>
+        <td id="reverse"></td>
       </tr>
     </table>
   </div>
