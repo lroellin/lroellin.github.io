@@ -1,0 +1,36 @@
+---
+layout: default
+title: Dell Tags Converter
+description: Convert Service Tag to Express Service Code and vice-versa
+---
+<h2>To Express Code</h2>
+<div class="row">
+    <div class="col-md-6">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Service Tag" id="stInput">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button" id="stButton">Go!</button>
+        </span>
+      </div>
+    </div>
+    <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Result" id="stOutput">
+    </div>
+</div>
+{% include warning.html prefix="st" %}
+<h2>To Service Tag</h2>
+<div class="row">
+    <div class="col-md-6">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Express Service Code" id="escInput">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button" id="escButton">Go!</button>
+        </span>
+      </div>
+    </div>
+    <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Result" id="escOutput">
+    </div>
+</div>
+{% include warning.html prefix="esc" %}
+<script src="js.js"></script>
