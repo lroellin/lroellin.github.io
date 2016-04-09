@@ -2,6 +2,4 @@
 layout: default
 title: Home
 ---
-# Hello World
-
-## Hello again
+# About me
