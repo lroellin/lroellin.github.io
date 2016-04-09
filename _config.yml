@@ -16,12 +16,12 @@ url: "http://www.dreami.ch" # the base hostname & protocol for your site
 markdown: kramdown
 
 # Exclude
-exclude: [vendor]
+exclude: [vendor, drafts, Gemfile, Gemfile.lock]
 
 sass:
   # loading path from site root
   # default to _sass
-  sass_dir: bower_components/bootstrap-sass/assets/stylesheets
+  sass_dir: bower_components
 
   # style : nested (default), compact, compressed, expanded
   #         :nested, :compact, :compressed, :expanded also works
