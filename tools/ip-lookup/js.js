@@ -1,4 +1,4 @@
-$("button").click(function() {
+$("go").click(function() {
 	try {
 		if (!$("#progress").hasClass("active")) {
 			$("#progress").addClass("active")
