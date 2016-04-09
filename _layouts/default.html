@@ -10,7 +10,24 @@
       <div class="page-header">
         <h1>{{ page.title }} <small>{{ page.description }}</small></h1>
       </div>
+      {% if page.long-description %}
+      <div class="panel panel-default">
+        <div class="panel-heading"><i class="fa fa-info"></i> Info  </div>
+        <div class="panel-body">
+          {{ page.long-description }}
+        </div>
+      </div>
+      {% endif %}
         {{ content }}
+      {% if page.disclaimer %}
+      <div class="panel panel-warning">
+        <div class="panel-heading"><i class="fa fa-gavel"></i> Disclaimer</div>
+        <div class="panel-body">
+          {{ page.disclaimer }}
+        </div>
+      </div>
+      {% endif %}
+
     </div>
     {% include footer.html %}
 
