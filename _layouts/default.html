@@ -18,6 +18,20 @@
         </div>
       </div>
       {% endif %}
+      {% assign parts = page.url | split: '/'  %}
+      {% if parts.size > 0 %}
+        <ol class="breadcrumb">
+          {% for part in parts  %}
+            {% if forloop.first %}
+              <li><a href="/">home</a></li>
+            {% elsif forloop.last %}
+              <li class="active">{{ part }}</li>
+            {% else %}
+              <li>{{ part }}</li>
+            {% endif %}
+          {% endfor %}
+        </ol>
+      {% endif %}
         {{ content }}
       {% if page.disclaimer %}
       <div class="panel panel-warning">

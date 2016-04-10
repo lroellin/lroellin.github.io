@@ -1,0 +1,15 @@
+- title: "About me"
+  href: "/about/"
+- title: "Tools"
+  children:
+    - title: "Dell Tags Converter"
+      href: "/tools/dell-tags-converter/"
+    - title: "Gallery"
+      href: "/tools/gallery/"
+    - title: "IP Address Lookup"
+      href: "/tools/ip-lookup/"
+    - title: "MAC Address Lookup"
+      href: "/tools/mac-lookup/"
+- title: "Blog"
+  href: "https://blog.dreami.ch"
+  external: TRUE
