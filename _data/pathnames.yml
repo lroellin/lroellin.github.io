@@ -1,0 +1,4 @@
+- path: "tools"
+  name: "Tools"
+- path: "foo"
+  name: "bar"

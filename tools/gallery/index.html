@@ -3,7 +3,6 @@ layout: default
 title: Gallery
 description: Some of my montages
 ---
-{% assign key = 0 %}
 {% for picture in site.data.gallery %}
 <div class="col-md-6">
   <div class="card-height-indicator"></div>
@@ -28,22 +27,6 @@ description: Some of my montages
   </div>
 
 </div>
-
-<!--
-<div class="col-md-6">
-    <div class="thumbnail">
-      <a href="{{ picture.file | prepend: "img/" }}" data-lightbox="gallery" data-title="{{ picture.name }}">
-        <img src="{{ picture.file | prepend: "img/thumbnails/" }}" alt="{{ picture.name }}">
-      </a>
-      <div class="caption">
-        <h3>{{ picture.name }}</h3>
-        <a class="btn btn-default" href="{{ picture.source }}" role="button">Source</a>
-        <a class="btn btn-default" href="https://www.youtube.com/results?search_query={{ picture.name | url_escape }}" role="button">YouTube</a>
-        <a class="btn btn-default" href="{{ picture.file | prepend: "img/" }}" role="button">Download</a>
-      </div>
-    </div>
-  </div>
--->
 {% endfor %}
 
 <script src="js.js"></script>

@@ -1,0 +1,45 @@
+---
+layout: default
+title: Avia Finder
+description: All Avia gas stations in tabular form
+long-description: Since the Avia Finder is pretty shitty, I thought I'd put this information together for myself.
+disclaimer: This information is from a PDF of 2011
+---
+<div class="table-responsive">
+  <table class="table table-striped table-condensed table-hover">
+    <thead>
+      <th></th>
+      <th>Ort</th>
+      <th>Kanton</th>
+      <th>Adresse</th>
+      <th>BF95</th>
+      <th>BF95</th>
+      <th>Diesel</th>
+      <th>AdBlue</th>
+      <th>LKW</th>
+      <th>Shop</th>
+      <th>Waschanlage</th>
+      <th>SB-Box</th>
+    </thead>
+    <tbody>
+      {% for station in site.data.avia-finder %}
+      {% capture location  %}{{ station.ort | append: " " | append: station.kanton | append: ", " | append: station.adresse }}{% endcapture %}
+        <tr>
+          <td><a href="https://maps.google.com/?q={{ location }}" target="_blank"><i class="material-icons">map</i></a></td>
+          <td>{{ station.ort }}</td>
+          <td>{{ station.kanton }}</td>
+          <td>{{ station.adresse }}</td>
+          <td>{% include test.html test=station.bf95 %}</td>
+          <td>{% include test.html test=station.bf98 %}</td>
+          <td>{% include test.html test=station.diesel %}</td>
+          <td>{% include test.html test=station.adblue %}</td>
+          <td>{% include test.html test=station.lkw %}</td>
+          <td>{% include test.html test=station.shop %}</td>
+          <td>{% include test.html test=station.waschanlage %}</td>
+          <td>{% include test.html test=station.sbbox %}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+<script src="js.js"></script>

@@ -2,6 +2,8 @@
   href: "/about/"
 - title: "Tools"
   children:
+    - title: "AVIA Finder"
+      href: "/tools/avia-finder/"
     - title: "Dell Tags Converter"
       href: "/tools/dell-tags-converter/"
     - title: "Gallery"

@@ -10,6 +10,28 @@
       <div class="page-header">
         <h1>{{ page.title }} <small>{{ page.description }}</small></h1>
       </div>
+      {% assign parts = page.url | split: '/'  %}
+      {% if parts.size > 0 %}
+        <ol class="breadcrumb">
+          {% for part in parts  %}
+            {% if forloop.first %}
+              <li><a href="/">Home</a></li>
+            {% elsif forloop.last %}
+              <li class="active">{{ page.title }}</li>
+            {% else %}
+              <li>
+                {% for pathname in site.data.pathnames %}
+                  {% if pathname.path == part %}
+                    {% assign name = pathname.name %}
+                    {% break %}
+                  {% endif %}
+                {% endfor %}
+                {{ name }}
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ol>
+      {% endif %}
       {% if page.long-description %}
       <div class="panel panel-default">
         <div class="panel-heading"> Info  </div>
@@ -17,20 +39,6 @@
           {{ page.long-description }}
         </div>
       </div>
-      {% endif %}
-      {% assign parts = page.url | split: '/'  %}
-      {% if parts.size > 0 %}
-        <ol class="breadcrumb">
-          {% for part in parts  %}
-            {% if forloop.first %}
-              <li><a href="/">home</a></li>
-            {% elsif forloop.last %}
-              <li class="active">{{ part }}</li>
-            {% else %}
-              <li>{{ part }}</li>
-            {% endif %}
-          {% endfor %}
-        </ol>
       {% endif %}
         {{ content }}
       {% if page.disclaimer %}
