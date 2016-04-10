@@ -10,4 +10,6 @@ $fa-font-path: "/bower_components/components-font-awesome/fonts/";
 
 /* any style customization must be before the bootstrap import */
 @import "bootstrap-sass/assets/stylesheets/bootstrap";
-@import "components-font-awesome/scss/font-awesome.scss";
+@import "components-font-awesome/scss/font-awesome";
+// Standard CSS, relative to this file
+@import "../bower_components/lightbox2/dist/css/lightbox.min.css";

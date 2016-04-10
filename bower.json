@@ -1,0 +1,24 @@
+{
+  "name": "lroellin.github.io",
+  "homepage": "https://github.com/lroellin/lroellin.github.io",
+  "authors": [
+    "Lukas Röllin <lukas.roellin@bluewin.ch>"
+  ],
+  "description": "Bower File",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "cryptojslib": "^3.1.2",
+    "components-font-awesome": "^4.5.0",
+    "lightbox2": "^2.8.2"
+  }
+}
