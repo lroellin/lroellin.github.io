@@ -1,0 +1,26 @@
+---
+layout: default
+title: Website Status
+description: Check a website
+---
+<div class="row">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Website" id="website">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button" id="go">Go!</button>
+      </span>
+    </div>
+</div>
+<br>
+
+<div class="panel panel-default" hidden id="panel">
+  <div class="panel-heading">Lookup</div>
+  <div class="panel-body">
+    <span id="test"></span>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%" id="progress"></div>
+    </div>
+</div>
+{% include warning.html %}
+{% include error.html %}
+<script src="js.js"></script>

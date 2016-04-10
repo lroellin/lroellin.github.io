@@ -6,10 +6,20 @@
   <title>{{ page.title | append: " | " | append: site.title }}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+
+  <link rel="stylesheet" href="/bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="/bower_components/bootstrap-material-design/dist/css/ripples.min.css">
+  <link rel="stylesheet" href="/bower_components/lightbox2/dist/css/lightbox.min.css">
+
   {% include favicon.html %}
 
-  <script src="{{ site.baseurl }}/bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="{{ site.baseurl }}/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+  <script src="/bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+  <script src="/bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+    <script src="/js/startup.js"></script>
   <!-- {{ site.time | date: '%c' }} -->
 </head>

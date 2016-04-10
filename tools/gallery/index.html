@@ -5,7 +5,32 @@ description: Some of my montages
 ---
 {% assign key = 0 %}
 {% for picture in site.data.gallery %}
-  <div class="col-md-6">
+<div class="col-md-6">
+  <div class="card-height-indicator"></div>
+  <div class="card-content">
+    <div class="card-image">
+      <a href="{{ picture.file | prepend: "img/" }}" data-lightbox="gallery" data-title="{{ picture.name }}">
+        <img src="{{ picture.file | prepend: "img/thumbnails/" }}" alt="{{ picture.name }}">
+      </a>
+      <h3>{{ picture.name }}</h3>
+    </div>
+
+    <div class="card-body">
+    </div>
+
+    <footer class="card-footer">
+      <a class="btn btn-link" href="{{ picture.source }}" role="button">Source</a>
+      <a class="btn btn-link" href="https://www.youtube.com/results?search_query={{ picture.name | url_escape }}" role="button">YouTube</a>
+      <a class="btn btn-link" href="{{ picture.file | prepend: "img/" }}" role="button">Download</a>
+    </footer>
+
+
+  </div>
+
+</div>
+
+<!--
+<div class="col-md-6">
     <div class="thumbnail">
       <a href="{{ picture.file | prepend: "img/" }}" data-lightbox="gallery" data-title="{{ picture.name }}">
         <img src="{{ picture.file | prepend: "img/thumbnails/" }}" alt="{{ picture.name }}">
@@ -18,6 +43,7 @@ description: Some of my montages
       </div>
     </div>
   </div>
+-->
 {% endfor %}
 
 <script src="js.js"></script>
