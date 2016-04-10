@@ -16,7 +16,7 @@ url: "http://www.dreami.ch" # the base hostname & protocol for your site
 markdown: kramdown
 
 # Exclude
-exclude: [vendor, drafts, Gemfile, Gemfile.lock]
+exclude: [vendor, drafts, Gemfile, Gemfile.lock bower.json]
 
 sass:
   # loading path from site root
