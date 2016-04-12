@@ -25,5 +25,5 @@ ratings:
   - "**.py"
   - "**.rb"
 exclude_paths: 
-- bower_components/*
-- drafts/*
+- bower_components/**/*
+- drafts/**/*
