@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from localhost/about.php by HTTrack Website Copier/3.x [XR&CO'2008], Tue, 12 Apr 2016 21:22:08 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>The Review Geek Homepage - About</title>
+<meta name="description" content="The Review Geek homepage">
+<meta name="author" content="Dreami">
+<meta name="editor" content="Dreamweaver CS4">
+<link rel="stylesheet" type="text/css" media="all" href="style.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script type="text/javascript">
+function showSpoiler(obj)
+    {
+    var inner = obj.parentNode.getElementsByTagName("div")[0];
+    if (inner.style.display == "none")
+        inner.style.display = "";
+    else
+        inner.style.display = "none";
+    }
+    </script>
+</head>
+<body>
+<div align="center"><!-- center start -->
+<div id="content"><!-- content start -->
+<!-- Menu start -->
+<img src="img/Banner.png" width="900" height="100" alt="The Review Geek" />
+<br />
+<a href="index.html">Home</a> |
+<a href="about.html">About</a> |
+<a href="pc.html">My PCs</a>  
+<hr />
+<!-- Menu end -->
+<div align="left"><!-- text start -->
+I'm 16 years old and I'm living in Switzerland. At this time, I'm doing work experience for one year as an IT supporter.
+<br />
+This site is a project of mine.<br />
+
+  <a href="img/Me_Homepage_Edit.png">Picture of me</a>
+  <br />
+<a href="http://dreami.kellerone.de/" target="_blank">My other site (German)</a>
+<br />
+<br />
+<div class="spoiler">
+  <input type="button" onclick="showSpoiler(this);" value="Technical Part" />
+  <div style="display:none;"><!-- spoiler text start -->
+  <div class="conttext"><!-- continuous text start -->
+  <p>I made this site just by coding it, not on a WYSIWYG-Edtior, so you can contact me too if you have question about my site or if you have problems with your own.<br />
+    I made this site with HTML (for the content), CSS (for the design) and PHP.
+    I use PHP to automatically read and include the menu from another file, so I only have to change one file to change all the menus (include() for those who are familiar with PHP)
+    <h2>Howto</h2>
+    To do this, I added some code to my site. Please make sure that your server supports PHP, that it's activated and that your filenames are php-compatible (.php or .phtml, I prefer .php)
+    <br />
+    If you want to take PHP-code into your HTML-Site, just write the whole HTML-code without the PHP-part.
+    Then you put the PHP-code in, just like here:<br />
+    &lt;?php<br />
+    include('menu.html');<br />
+    ?&gt;
+    <br />
+    Here I did it with the include() command. This reads the file menu.html (which is in the same directory), puts it in where the code is, and sends it to the browser. You can see this in the source of this site, the comments about the menu are from <a href="menu.html">menu.html</a>.
+    <br />
+    You are not forced to use .html as the filename ending for the included file. I just used it to quickly open it with my HTML-editor. It could also be called menu.include, because it just reads the file as it is and includes it.
+    <br /> 
+    I advise you to read the source, because I made comments, so you can understand why I did it that way. There are comments in the normal pages, in the <a href="menu.html">menu.html</a> and in <a href="style.css">style.css</a>.
+    <br />
+    Thanks to p0rnflakes, he helped me with the technical part of this and my other site. He's got a website too: <a href="http://www.p0rnflakes.de/" target="_blank">Home | p0rnflakes.de</a>
+    <br />
+    If you have questions, please contact <b>me</b> first, because he doesn't have time to give support to others.
+    <h2>Some things you need to remember when you're making a website:</h2>
+    <ul>
+      <li>Just because it looks like, doesn't mean it is</li>
+      <br />When you're making a website by using a WYSIWYG-editor, you may think: Well, on my screen, my layout is centered, so it also is on other screens. That's not true: You have to remember that the Internet is a place where there are multiple platforms and multiple browsers. The less you're site is depending on, the better it looks like.
+      <br />
+      When you got a resolution of 1280*1024 and you got an element with 100 pixel width, it is <b>not</b> centered by spacing it 590 pixel from the left.
+      <br />
+      <br />
+      <li>New technologies should only be used if you need them</li>
+      <br />
+      For normal use of the Internet, a browser is not the only thing you need. You have to get a Flash player and a Java (not Javascript!) interpreter. You have to think about usability. What if there are users with Javascript turned off? Shouldn't they also be able to use your site? There are many reasons to turn it off, a big one is security. Every piece of additional software could make a security hole in your system. <br />If you'd like to get a nice-looking feature in your site, look for an alternative with proper HTML or CSS.
+      <br />
+      <br />
+      <li>Always check your website on multiple browsers</li>
+      <br />
+      Different browser do render different. There is one example I experienced by myself:
+      I had a table with some facts about me. The table itself should be centered, so I centered it with &lt;div align=&quot;center&quot;&gt; The content in the table should be aligned to the left like normal text.
+      <br />
+      In Firefox, it was rendered the way I wanted it to. As I opened my website on Internet Explorer, the content was also centered, so I had to manually align the text to the left. <br />So, if you're not sure, better write it explicitly the way you want it. 
+      </ul>
+      </div><!-- continuous text end -->
+  </div><!-- spoiler text end -->
+  </div>
+</div><!-- text end -->
+</div><!-- content end -->
+</div><!-- center end -->
+</body>
+
+<!-- Mirrored from localhost/about.php by HTTrack Website Copier/3.x [XR&CO'2008], Tue, 12 Apr 2016 21:22:08 GMT -->
+</html>

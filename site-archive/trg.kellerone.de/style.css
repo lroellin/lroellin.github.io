@@ -1,0 +1,53 @@
+body {
+	background-image:url(img/Background_TRG.png);
+	background-repeat:repeat;
+	font-size: 16px;
+	color: #FFF;
+	font-family: Arial, Helvetica, Nimbus, sans-serif;
+}
+/* Nimbus for Linux without mstt-corefonts */
+a:link {
+	text-decoration:none;
+	font-weight:bold;
+	color:#FFF;
+}
+/* Style for an active link */
+a:visited {
+	text-decoration:none;
+	font-weight:bold;
+	color:#a6a6a6;
+}
+/* Style for a visited link */
+a:hover, a:active, a:focus {
+	text-decoration:underline;
+	font-weight:bold;
+	color:#a6a6a6;
+}
+/* Style for links which are on focus, by tab or mouse pointer */
+/* These kind of links have the same styling, so I set it all together by separating them with a comma */
+img {
+	border: none 0 #FFF;
+}
+/* To automatically avoid borders in images which are used as links */
+h1 {
+	font-size: 20px;
+	color: #FFF;
+}
+h2 {
+	font-size: 15px;
+	color: #FFF;
+}
+#content {
+	width:900px;
+	background-color:#000;
+	border:2px solid #FFF;
+	margin:0px auto;
+}
+/* Div container for the content */
+/* Used the prefix # because it's an ID */
+.conttext {
+	font-size:14px;
+}
+/* Div container for continuous text */
+/* Used the prefix . because it's a class */
+/* You can use IDs for elements which are used once in a HTML document. Classes are used for elements which are used many times. */
