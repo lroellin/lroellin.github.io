@@ -1,4 +1,4 @@
-- title: "About me"
+- title: "About"
   href: "/about/"
 - title: "Tools"
   children:
@@ -14,4 +14,7 @@
       href: "/tools/web-lookup/"
 - title: "Blog"
   href: "https://blog.dreami.ch"
-  external: TRUE
+  external: true
+- title: "Fork me"
+  href: "https://github.com/lroellin/lroellin.github.io"
+  external: true
