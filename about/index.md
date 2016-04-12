@@ -8,7 +8,7 @@ This website runs on top of Github Pages. This is the third iteration on a perso
 
 So far I've had the following:
 
-### 2009-2010: dreami.kellerone.de
+### 2008-2009: dreami.kellerone.de
 The first iteration was hosted on a friend's vServer and I was pretty content with it. It was hand-coded HTML in Notepad and then processed by PHP for some include stuff like menus. If I find the time, I'll upload that one to here.
 It was pretty shitty but I loved it at the time. I could finally show all my achievements to the world ;)
 
@@ -26,6 +26,10 @@ It was pretty shitty but I loved it at the time. I could finally show all my ach
 
 * Most people are not impressed by nerdy websites
 
+#### 2009: The Review Geek trg.kellerone.de
+Based on my new knowledge of PHP I built a site dedicated to reviews. It wasn't that successful, judging from the number of reviews (3, in total) and the name was stolen from the Angry Video Game Nerd ;)
+
+It was pretty fun though because I could learn from old mistakes. For the fun of it, here's an [archived, fully working copy](/site-archive/trg.kellerone.de/)
 
 ### 2013-2015 www.dreami.ch #1
 This site was built after having had a PHP course. I already knew at that time that PHP was pretty shitty but I didn't want to learn Rails yet. It was pretty good but I soon hit the limitations of pure PHP and it was too late to switch it to a proper framework. I already had custom functions for everything (I'll post that too maybe).

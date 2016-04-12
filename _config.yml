@@ -31,3 +31,4 @@ sass:
   style: compressed
 
 host: 0.0.0.0
+incremental: true
