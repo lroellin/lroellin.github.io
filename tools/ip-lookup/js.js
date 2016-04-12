@@ -8,31 +8,17 @@ $("#go").click(function() {
 			$("#progress").addClass("progress-bar-striped")
 		}
 		$("#progress").removeClass("progress-bar-success progress-bar-warning progress-bar-danger")
-		$("#panel").show();
-		$("#Warning").hide();
-		$("#WarningDescription").text("");
-		$("#Error").hide();
-		$("#ErrorDescription").text("");
-		$("#table").hide();
-		$("#address").html("");
-		$("#country").html("");
-		$("#region").html("");
-		$("#city").html("");
-		$("#isp").html("");
-		$("#as").html("");
-		$("#organization").html("");
-		$("#reverse").html("");
+		$(".start-show").show();
+		$(".start-hide").hide();
+		$(".start-empty").html("");
 		let ip = $("#ip").val();
-		/*if(ip === "") {
-			throw "Input is empty";
-		}*/
 		$.ajax({
 			type: 'GET',
 			url: 'http://ip-api.com/json/' + ip,
 			dataType: 'jsonp',
-			crossDomain: true,
+			crossDomain: true
 		}).done(function(response) {
-			if (response.status == "fail") {
+			if (response.status === "fail") {
 				$("#progress").removeClass("active progress-bar-striped");
 				$("#progress").addClass("progress-bar-warning")
 				$("#Warning").show();
@@ -45,7 +31,7 @@ $("#go").click(function() {
 				$("#country").html(response.countryCode);
 				$("#region").html(response.region);
 				$("#city").html(response.city);
-				$("#as").html(response.isp);
+				$("#isp").html(response.isp);
 				$("#as").html(response.as);
 				$("#organization").html(response.org);
 				$("#reverse").html(response.reverse);

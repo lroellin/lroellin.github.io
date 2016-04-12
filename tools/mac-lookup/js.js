@@ -8,15 +8,9 @@ $("#go").click(function() {
 			$("#progress").addClass("progress-bar-striped")
 		}
 		$("#progress").removeClass("progress-bar-success progress-bar-warning progress-bar-danger")
-		$("#panel").show();
-		$("#Warning").hide();
-		$("#WarningDescription").text("");
-		$("#Error").hide();
-		$("#ErrorDescription").text("");
-		$("#table").hide();
-		$("#prefix").html("");
-		$("#company").html("");
-		$("#address").html("");
+		$(".start-show").show();
+		$(".start-hide").hide();
+		$(".start-empty").html("");
 		let mac = $("#mac").val();
 		if(mac === "") {
 			throw "Input is empty";
@@ -25,7 +19,7 @@ $("#go").click(function() {
 			type: 'GET',
 			url: 'http://macvendors.co/api/jsonp/' + mac,
 			dataType: 'jsonp',
-			crossDomain: true,
+			crossDomain: true
 		}).done(function(response) {
 			if (response.result.error) {
 				$("#progress").removeClass("active progress-bar-striped");
