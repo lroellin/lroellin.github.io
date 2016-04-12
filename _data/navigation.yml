@@ -8,10 +8,10 @@
       href: "/tools/dell-tags-converter/"
     - title: "Gallery"
       href: "/tools/gallery/"
-    - title: "Web Address Lookup"
-      href: "/tools/web-lookup/"
     - title: "MAC Address Lookup"
       href: "/tools/mac-lookup/"
+    - title: "Web Address Lookup"
+      href: "/tools/web-lookup/"
 - title: "Blog"
   href: "https://blog.dreami.ch"
   external: TRUE
