@@ -1,26 +1,28 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{{ page.title | append: " | " | append: site.title }}</title>
-  <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines }}{% else %}{{ site.description }}{% endif %}">
-  <meta name="theme-color" content="#009688">
+    <title>{{ page.title | append: " | " | append: site.title }}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="theme-color" content="#009688">
 
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
-  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/css/main.css">
 
-  <link rel="stylesheet" href="/bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">
-  <link rel="stylesheet" href="/bower_components/bootstrap-material-design/dist/css/ripples.min.css">
-  <link rel="stylesheet" href="/bower_components/lightbox2/dist/css/lightbox.min.css">
+    <link rel="stylesheet" href="/bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="/bower_components/bootstrap-material-design/dist/css/ripples.min.css">
+    <link rel="stylesheet" href="/bower_components/lightbox2/dist/css/lightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/t/bs/dt-1.10.11,af-2.1.1,b-1.1.2,b-colvis-1.1.2,fh-3.1.1,r-2.0.2,sc-1.4.1,se-1.1.2/datatables.min.css" /> {% include favicon.html %}
 
-  {% include favicon.html %}
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    <script src="/bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+    <script src="/bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+    <script src="/js/startup.js"></script>
 
-  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
-  <script src="/bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
-  <script src="/bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
-  <script src="/js/startup.js"></script>
-  <!-- {{ site.time | date: '%c' }} -->
+
+    <script type="text/javascript" src="https://cdn.datatables.net/t/bs/dt-1.10.11,af-2.1.1,b-1.1.2,b-colvis-1.1.2,fh-3.1.1,r-2.0.2,sc-1.4.1,se-1.1.2/datatables.min.js"></script>
+    <!-- {{ site.time | date: '%c' }} -->
 </head>
