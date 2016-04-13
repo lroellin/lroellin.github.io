@@ -11,7 +11,7 @@ $("#go").click(function() {
 		$(".start-show").show();
 		$(".start-hide").hide();
 		$(".start-empty").html("");
-		let mac = $("#mac").val();
+		mac = $("#mac").val();
 		if(mac === "") {
 			throw "Input is empty";
 		}
