@@ -11,7 +11,7 @@ $("#go").click(function() {
 		$(".start-show").show();
 		$(".start-hide").hide();
 		$(".start-empty").html("");
-		let ip = $("#ip").val();
+		ip = $("#ip").val();
 		$.ajax({
 			type: 'GET',
 			url: 'http://ip-api.com/json/' + ip,
