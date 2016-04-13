@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/lroellin/lroellin.github.io.svg?branch=master)](https://travis-ci.org/lroellin/lroellin.github.io)
 [![security](https://hakiri.io/github/lroellin/lroellin.github.io/master.svg)](https://hakiri.io/github/lroellin/lroellin.github.io/master)
+[![Code Climate](https://codeclimate.com/github/lroellin/lroellin.github.io/badges/gpa.svg)](https://codeclimate.com/github/lroellin/lroellin.github.io)
 # lroellin.github.io
 
 This is another shot at my personal website. Since I want to do it 2016 style this time (instead of PHP by hand), this will be hosted on Github Pages.
