@@ -4,7 +4,7 @@ $(document).ready(function() {
     		fixedHeader: {
         		header: true,
         		footer: false
-    		}
+    		},
     		"pageLength": 25
 	} );
 	console.log("DataTable ready")
