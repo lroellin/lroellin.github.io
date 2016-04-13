@@ -5,6 +5,7 @@ $(document).ready(function() {
         		header: true,
         		footer: false
     		}
+    		"pageLength": 25
 	} );
 	console.log("DataTable ready")
 	$("#avia").show();
