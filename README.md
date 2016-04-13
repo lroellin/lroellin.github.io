@@ -18,7 +18,8 @@ There were some apps on that old site, some of it were client-side JS, some serv
 * No outdated infos
 
 # Current plans
-* Embed Bootstrap
-* Use my old domain
-* Move over contents
-* Move over apps and re-write where needed
+* ~~Embed Bootstrap~~
+* ~~Use my old domain~~
+* ~~Move over contents~~
+* ~~Move over apps and re-write where needed~~
+* Create api.dreami.ch in Go as a backend
