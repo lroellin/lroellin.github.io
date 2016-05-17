@@ -60,7 +60,7 @@ This site was built after having had a PHP course. I already knew at that time t
 My WordPress blog. Now hosted on WordPress's own site so I don't have to care about it anymore. I quite like the current state and it's a good way to get content out to people since it integrates quite well into FB and Twitter.
 
 ### 2016 www.dreami.ch #2
-After having dumped my PHP site because I was not maintaining it anymore, I didn't think of having one anymore. I already started my site project, the blog, and that was running pretty fine. There still were some links around to my actual website and I thought, let's give it a try.
+After having dumped my PHP site because I was not maintaining it anymore, I didn't think of having one anymore. I already started my side project, the blog, and that was running pretty fine. There still were some links around to my actual website and I thought, let's give it a try.
 
 I wanted to do this in a modern style, so I got current tools and did it the proper way. I did reuse some stuff though, like the online tools I wrote (only reused the idea though) and I still like Bootstrap. I went for Material Design this time though.
 
