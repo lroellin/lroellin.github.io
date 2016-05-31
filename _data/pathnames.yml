@@ -1,4 +1,6 @@
 - path: "tools"
   name: "Tools"
+- path: "apps"
+  name: "Apps"
 - path: "foo"
   name: "bar"

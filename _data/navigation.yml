@@ -12,6 +12,10 @@
       href: "/tools/mac-lookup/"
     - title: "Web Address Lookup"
       href: "/tools/web-lookup/"
+- title: "Apps"
+  children:
+    - title: "Hash Calculator"
+      href: "/apps/hash-calculator/"
 - title: "Blog"
   href: "https://blog.dreami.ch"
   external: true
