@@ -18,6 +18,7 @@ It is a ClickOnce application, so you have the choice to update it whenever you 
 I did not find a decent Hash Calculator that uses multiple threads in parallel, even though this makes a lot of sense. The user interface and each hashing algorithm runs in its own thread. This keeps the user interface responsive and is a lot faster when using a lot of algorithms.
 
 ## Changelog
+* 1.3.1: Fix: Threading Problem
 * 1.3.0:
   * Feature: Error Checks
   * Fix: Borders not resetting correctly
