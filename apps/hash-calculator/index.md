@@ -28,7 +28,7 @@ It is a ClickOnce application, so you have the choice to update it whenever you 
 
 ### Multi-Threading
 * A multi-core machine can run several algorithms simultaneously
-* When using several algorithms, you don't have to wait for SHA512 (slow) to finish to display the value of MD5(fast)
+* When using several algorithms, you don't have to wait for SHA512 (slow) to finish to display the value of MD5 (fast)
 * The GUI does not freeze and is still usable
 
 I did not find a decent Hash Calculator that supports all this. That does not mean other developers are incompetent, it just got a lot easier in the last years to program multi-threaded.
@@ -37,7 +37,7 @@ I did not find a decent Hash Calculator that supports all this. That does not me
 * 1.4.0:
   * Feature: Add runtime
   * Feature: Check hash files
-  * Enhancement: Save hash file follows
+  * Enhancement: Save hash file follows sort-of standard (tools like md5sum)
 * 1.3.1: Fix: Threading Problem
 * 1.3.0:
   * Feature: Error Checks
