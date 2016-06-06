@@ -18,6 +18,7 @@ It is a ClickOnce application, so you have the choice to update it whenever you 
 * Parallel calculation of hash values
 * Compare hashes
 * Save hash values to file
+* Check hash values in file (e.g. .md5)
 * See runtime for each algorithm (hover over progress bar)
 * Algorithms
   * MD5
@@ -32,6 +33,10 @@ It is a ClickOnce application, so you have the choice to update it whenever you 
 * The GUI does not freeze and is still usable
 
 I did not find a decent Hash Calculator that supports all this. That does not mean other developers are incompetent, it just got a lot easier in the last years to program multi-threaded.
+
+## Limitations
+* ClickOnce applications cannot be run as an Administrator or any other user
+* Checks are only done on a per-file basis. Files like e.g. MD5SUM or MD5SUMS are not supported
 
 ## Changelog
 * 1.4.2
