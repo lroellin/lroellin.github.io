@@ -26,6 +26,8 @@ It is a ClickOnce application, so you have the choice to update it whenever you 
   * SHA256
   * SHA384
   * SHA512
+  * More
+    * RIPEMD160
 
 ### Multi-Threading
 * A multi-core machine can run several algorithms simultaneously
@@ -39,6 +41,10 @@ I did not find a decent Hash Calculator that supports all this. That does not me
 * Checks are only done on a per-file basis. Files like e.g. MD5SUM or MD5SUMS are not supported
 
 ## Changelog
+* 1.4.3
+  * Feature: Play sound when done (optional)
+  * Feature: RIPEMD160 (under More)
+  * Enhancement: Showing rules for normalization
 * 1.4.2
   * Fix: Status set incorrect while saving
   * Fix: Missing newline in hash file
