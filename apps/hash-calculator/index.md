@@ -34,6 +34,9 @@ It is a ClickOnce application, so you have the choice to update it whenever you 
 I did not find a decent Hash Calculator that supports all this. That does not mean other developers are incompetent, it just got a lot easier in the last years to program multi-threaded.
 
 ## Changelog
+* 1.4.1:
+  * Enhancement: User input (hash file and compare) is now normalized
+  * Internal: Cleaner code
 * 1.4.0:
   * Feature: Add runtime
   * Feature: Check hash files
