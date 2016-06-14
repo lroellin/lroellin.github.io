@@ -61,5 +61,9 @@ I did not find a decent Hash Calculator that supports all this. That does not me
   * Fix: Borders not resetting correctly
 * 1.2.2: First public release
 
+## Known Issues
+* Two shortcuts in Start Menu
+  * ClickOnce generated two Start Menu shortcuts because of a configuration error. One of them points to an older release. To get rid of this, uninstall the app (via Programs & Features) and re-install again, it will delete all shortcuts.
+
 ## Open Source
 This tool is open source with an MIT license. You can fork it on [Github](https://github.com/lroellin/Hash-Calculator).
