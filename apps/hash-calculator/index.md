@@ -70,5 +70,8 @@ I did not find a decent Hash Calculator that supports all this. That does not me
 * Two shortcuts in Start Menu
   * ClickOnce generated two Start Menu shortcuts because of a configuration error in an old release. One of them points to an outdated version. To get rid of this, uninstall the app (via Programs & Features) and re-install again, it will delete all shortcuts.
 
+## Feedback
+Send feedback to hash-calculator `at` dreami.ch
+
 ## Open Source
 This tool is open source with an MIT license. You can fork it on [Github](https://github.com/lroellin/Hash-Calculator).
