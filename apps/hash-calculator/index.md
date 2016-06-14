@@ -10,7 +10,7 @@ A multi-threaded, parallel Hash Calculator.
 ## Installation / Download
 [Download](//raw.githubusercontent.com/lroellin/hash-calculator/master/Hash-Calculator/Hash-Calculator/publish/setup.exe)
 
-It's a ClickOnce application, so you have the choice to update it whenever you start it.
+It's a ClickOnce application, so you can choose to update whenever you start it.
 
 ## Features
 * Parallel calculation of hash values
