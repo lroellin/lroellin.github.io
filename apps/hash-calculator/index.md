@@ -44,7 +44,9 @@ I did not find a decent Hash Calculator that supports all this. That does not me
 * I cannot run it as another user or Administrator
   * ClickOnce applications cannot be run as an Administrator or any other user
 
-## Changelog
+## Changelog¨
+* 1.4.4
+  * Incorporated usability feedback
 * 1.4.3
   * Feature: Play sound when done (optional)
   * Feature: RIPEMD160 (under More)
