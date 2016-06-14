@@ -10,15 +10,13 @@ A multi-threaded, parallel Hash Calculator.
 ## Installation / Download
 [Download](//raw.githubusercontent.com/lroellin/hash-calculator/master/Hash-Calculator/Hash-Calculator/publish/setup.exe)
 
-Note: As this app is not yet well-known, Smart Screen will not recognize it. Click on *More Info > Run anyway*. This should get better in the future.
-
 It is a ClickOnce application, so you have the choice to update it whenever you start it.
 
 ## Features
 * Parallel calculation of hash values
 * Compare hashes
 * Save hash values to file
-* Check hash values in file (e.g. .md5)
+* Check hash values in file (e.g. .md5, also see [Known Issues](#known-issues))
 * See runtime for each algorithm (hover over progress bar)
 * Algorithms
   * MD5
@@ -63,7 +61,11 @@ I did not find a decent Hash Calculator that supports all this. That does not me
 
 ## Known Issues
 * Two shortcuts in Start Menu
-  * ClickOnce generated two Start Menu shortcuts because of a configuration error. One of them points to an older release. To get rid of this, uninstall the app (via Programs & Features) and re-install again, it will delete all shortcuts.
+  * ClickOnce generated two Start Menu shortcuts because of a configuration error in an old release. One of them points to an outdated version. To get rid of this, uninstall the app (via Programs & Features) and re-install again, it will delete all shortcuts.
+* My hash value files are not found
+  * Hash Calculator only supports a limited range of hash files. The file names are displayed in the GUI and it only supports files of the following formats
+    * <hash><space><anything> (tools like md5sum)
+    * <hash>
 
 ## Open Source
 This tool is open source with an MIT license. You can fork it on [Github](https://github.com/lroellin/Hash-Calculator).
