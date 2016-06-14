@@ -10,13 +10,13 @@ A multi-threaded, parallel Hash Calculator.
 ## Installation / Download
 [Download](//raw.githubusercontent.com/lroellin/hash-calculator/master/Hash-Calculator/Hash-Calculator/publish/setup.exe)
 
-It is a ClickOnce application, so you have the choice to update it whenever you start it.
+It's a ClickOnce application, so you have the choice to update it whenever you start it.
 
 ## Features
 * Parallel calculation of hash values
 * Compare hashes
 * Save hash values to file
-* Check hash values in file (e.g. .md5, also see [Known Issues](#known-issues))
+* Check hash values in file (e.g. .md5, also see [FAQ](#faq))
 * See runtime for each algorithm (hover over progress bar)
 * Algorithms
   * MD5
@@ -34,9 +34,15 @@ It is a ClickOnce application, so you have the choice to update it whenever you 
 
 I did not find a decent Hash Calculator that supports all this. That does not mean other developers are incompetent, it just got a lot easier in the last years to program multi-threaded.
 
-## Limitations
-* ClickOnce applications cannot be run as an Administrator or any other user
-* Checks are only done on a per-file basis. Files like e.g. MD5SUM or MD5SUMS are not supported
+## FAQ
+* My hash value files are not found or incorrect
+  * Hash Calculator only supports a limited range of hash files. The file names are displayed in the GUI and it only supports files of the following formats
+    * `<hash><space><anything>` (tools like md5sum)
+    * `<hash>`
+  * It only supports per-file hash files. So e.g. MD5SUM or MD5SUMS is not supported
+  * The file name needs to be `<full file name>.<hash>`. `<full file name>` needs to include all file extensions like `.exe`
+* I cannot run it as another user or Administrator
+  * ClickOnce applications cannot be run as an Administrator or any other user
 
 ## Changelog
 * 1.4.3
@@ -58,14 +64,11 @@ I did not find a decent Hash Calculator that supports all this. That does not me
   * Feature: Error Checks
   * Fix: Borders not resetting correctly
 * 1.2.2: First public release
+ 
 
 ## Known Issues
 * Two shortcuts in Start Menu
   * ClickOnce generated two Start Menu shortcuts because of a configuration error in an old release. One of them points to an outdated version. To get rid of this, uninstall the app (via Programs & Features) and re-install again, it will delete all shortcuts.
-* My hash value files are not found
-  * Hash Calculator only supports a limited range of hash files. The file names are displayed in the GUI and it only supports files of the following formats
-    * `<hash><space><anything>` (tools like md5sum)
-    * `<hash>`
 
 ## Open Source
 This tool is open source with an MIT license. You can fork it on [Github](https://github.com/lroellin/Hash-Calculator).
