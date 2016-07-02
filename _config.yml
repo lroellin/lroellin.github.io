@@ -18,6 +18,9 @@ markdown: kramdown
 # Exclude
 exclude: [vendor, drafts, Gemfile, Gemfile.lock, bower.json]
 
+gems:
+  - jekyll-sitemap
+
 sass:
   # loading path from site root
   # default to _sass
