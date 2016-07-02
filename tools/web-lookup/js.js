@@ -34,10 +34,6 @@ $("#go").click(function() {
 			console.log(jqXHR);
 		});
 	} catch (err) {
-		$("#progress").removeClass("active progress-bar-striped");
-		$("#progress").addClass("progress-bar-warning")
-		$("#Warning").show();
-		$("#WarningDescription").text(err)
-		console.log(err);
+		showError(err);
 	}
 });

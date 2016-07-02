@@ -15,3 +15,11 @@ function resetProgress() {
 	$(".start-hide").hide();
 	$(".start-empty").html("");
 }
+
+function showError(err) {
+	$("#progress").removeClass("active progress-bar-striped");
+	$("#progress").addClass("progress-bar-warning")
+	$("#Warning").show();
+	$("#WarningDescription").text(err)
+	console.log(err);
+}
