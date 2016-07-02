@@ -1,16 +1,6 @@
 $("#go").click(function() {
 	try {
-		if (!$("#progress").hasClass("active")) {
-			$("#progress").addClass("active")
-		}
-
-		if (!$("#progress").hasClass("progress-bar-striped")) {
-			$("#progress").addClass("progress-bar-striped")
-		}
-		$("#progress").removeClass("progress-bar-success progress-bar-warning progress-bar-danger")
-		$(".start-show").show();
-		$(".start-hide").hide();
-		$(".start-empty").html("");
+		resetProgress();
 		mac = $("#mac").val();
 		if(mac === "") {
 			throw "Input is empty";
