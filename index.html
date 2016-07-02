@@ -2,7 +2,6 @@
 layout: default
 title: Home
 ---
-<h2>My personal site</h2>
 {% for nav in site.data.navigation %}
   {% if nav.children == null %}
     <li><a href="{{ nav.href }}" {% if nav.external %}target="_blank"{% endif %}>{{ nav.title }}</a></li>
