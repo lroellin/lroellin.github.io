@@ -1,5 +1,7 @@
-{% if include.test %}
+{% if include.test == true %}
   <i class="material-icons">done</i>
-{% else %}
+{% elsif include.test == false %}
   <i class="material-icons">clear</i>
+{% else %}
+  <i class="material-icons">help_outline</i>
 {% endif %}

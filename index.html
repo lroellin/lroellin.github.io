@@ -2,3 +2,16 @@
 layout: default
 title: Home
 ---
+<h2>My personal site</h2>
+{% for nav in site.data.navigation %}
+  {% if nav.children == null %}
+    <li><a href="{{ nav.href }}" {% if nav.external %}target="_blank"{% endif %}>{{ nav.title }}</a></li>
+  {% else %}
+    <li>{{ nav.title }}</li>
+    <ul>
+      {% for child in nav.children %}
+      <li><a href="{{ child.href }}" {% if nav.external %}target="_blank"{% endif %}>{{ child.title }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endfor %}

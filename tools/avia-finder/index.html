@@ -20,14 +20,18 @@ disclaimer: This information is from a PDF of 2011
     <th>Ort</th>
     <th>Kanton</th>
     <th>Adresse</th>
+    <th>Autobahn</th>
     <th>BF95</th>
-    <th>BF95</th>
+    <th>BF98</th>
     <th>Diesel</th>
+    <th>LPG</th>
     <th>AdBlue</th>
-    <th>LKW</th>
+    <th>LKW (40t)</th>
+    <th>2-Takt</th>
     <th>Shop</th>
     <th>Wasch-<br>anlage</th>
     <th>SB-Box</th>
+    <th>Werkstatt</th>
   </thead>
   <tbody>
     {% for station in site.data.avia-finder %}
@@ -37,14 +41,18 @@ disclaimer: This information is from a PDF of 2011
         <td>{{ station.ort }}</td>
         <td>{{ station.kanton }}</td>
         <td>{{ station.adresse }}</td>
+        <td>{% include test.html test=station.autobahn %}</td>
         <td>{% include test.html test=station.bf95 %}</td>
         <td>{% include test.html test=station.bf98 %}</td>
         <td>{% include test.html test=station.diesel %}</td>
+        <td>{% include test.html test=station.lpg %}</td>
         <td>{% include test.html test=station.adblue %}</td>
         <td>{% include test.html test=station.lkw %}</td>
+        <td>{% include test.html test=station.2takt %}</td>
         <td>{% include test.html test=station.shop %}</td>
         <td>{% include test.html test=station.waschanlage %}</td>
         <td>{% include test.html test=station.sbbox %}</td>
+        <td>{% include test.html test=station.werkstatt %}</td>
       </tr>
     {% endfor %}
   </tbody>
