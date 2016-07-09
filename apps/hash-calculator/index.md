@@ -2,7 +2,7 @@
 layout: default
 title: Hash Calculator
 ---
-![Screenshot](Hash-Calculator.png)
+![Screenshot](HC-1.4.6.png)
 
 ## Description
 A multi-threaded, parallel Hash Calculator.
