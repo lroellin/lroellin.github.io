@@ -45,6 +45,8 @@ I did not find a decent Hash Calculator that supports all this. That does not me
   * ClickOnce applications cannot be run as an Administrator or any other user
 
 ## Changelog
+* 1.4.6
+  * Fix: Reverted compare change, multi-threading leads to a race condition
 * 1.4.5
   * Enhancement: Icons and other UX
   * Enhancement: Compare now works retrospectively after the run
