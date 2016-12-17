@@ -37,6 +37,21 @@ disclaimer: All info is based on macvendors.co.
     </table>
   </div>
 </div>
+
+<div class="panel panel-default start-show" hidden id="panel-information">
+  <div class="panel-heading">Information</div>
+  <div class="panel-body">
+    <p>
+      First byte is <tt><span id="first-byte"></span></tt><br>
+      First bits are
+      <tt>
+        <span id="high-bits"></span> <span id="low-bits-two-first"></span><b><span class="global-local"></span></b><i><span class="unicast-multicast"></span></i>
+      </tt><br>
+      Global/Local bit is <tt><b><span class="global-local"></span></b></tt>: <span id="global-local-text"></span><br>
+      Unicast/Multicast bit is <tt><i><span class="unicast-multicast"></span></i></tt>: <span id="unicast-multicast-text"></span><br>
+    </p>
+  </div>
+</div>
 {% include warning.html %}
 {% include error.html %}
 <script src="js.js"></script>
