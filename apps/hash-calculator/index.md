@@ -2,7 +2,7 @@
 layout: default
 title: Hash Calculator
 ---
-![Screenshot](Hash-Calculator.png)
+![Screenshot](HC-1.4.6.png)
 
 ## Description
 A multi-threaded, parallel Hash Calculator.
@@ -45,6 +45,12 @@ I did not find a decent Hash Calculator that supports all this. That does not me
   * ClickOnce applications cannot be run as an Administrator or any other user
 
 ## Changelog
+* 1.4.6
+  * Fix: Reverted compare change, multi-threading leads to a race condition
+* 1.4.5
+  * Enhancement: Icons and other UX
+  * Enhancement: Compare now works retrospectively after the run
+  * Fix: Compare works the wrong way when there's no result
 * 1.4.4
   * Incorporated usability feedback
 * 1.4.3
