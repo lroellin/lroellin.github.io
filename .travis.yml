@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - 2.1.5
+  - 2.3.3
 script:
   - bundle exec jekyll build
   - bundle exec htmlproofer ./_site/ --disable-external --check-favicon --check-html --only-4xx --file-ignore '/bower_components/.|site-archive/./' 
