@@ -5,12 +5,12 @@ title: Home
 <ul> 
 {% for nav in site.data.navigation %}
   {% if nav.children == null %}
-    <li><a href="{{ nav.href }}" {% if nav.external %}target="_blank"{% endif %}><h4>{{ nav.title }}</h4></a></li>
+    <li><a href="{{ nav.href }}" {% if nav.external %}target="_blank"{% endif %}>{{ nav.title }}</a></li>
   {% else %}
     <li><h4>{{ nav.title }}</h4></li>
     <ul>
       {% for child in nav.children %}
-      <li><a href="{{ child.href }}" {% if nav.external %}target="_blank"{% endif %}><h4>{{ child.title }}</h4></a></li>
+      <li><a href="{{ child.href }}" {% if nav.external %}target="_blank"{% endif %}>{{ child.title }}</a></li>
       {% endfor %}
     </ul>
   {% endif %}
