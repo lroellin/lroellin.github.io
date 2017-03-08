@@ -2,6 +2,7 @@
 layout: default
 title: Home
 ---
+<nav>
 <ul> 
 {% for nav in site.data.navigation %}
   {% if nav.children == null %}
@@ -16,3 +17,4 @@ title: Home
   {% endif %}
 {% endfor %}
 </ul>
+</nav>
